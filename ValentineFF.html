@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> My Valentine </title>
+<meta charset="utf-8">
+<!--Valentine, Flora Fadgyas, February 14, 2023-->
+<style>
+body{background-color:#FDE1F2;
+border:20px dotted white;
+text-align:center}
+
+h1{background-color:#932B57;
+color:#E3CAD5;
+text-align:center;
+font-size:50pt;
+border:5px solid white}
+
+h2{background-color:#FDF0D6;
+color:#E17452;
+text-indent:20px}
+
+h3{background-color:#F8EFFE;
+color:#64123E;
+border:5px solid white;}
+
+h4{font-size:30pt;
+background-color:#F9679F;
+color:white}
+
+div{color:#7E153D;
+text-decoration:underline}
+</style>
+<script>
+valentine=prompt("What is the name of your valentine?");
+alert("I hope " + valentine + " has a great Valentine's Day!")
+
+function fish(){document.body.style.backgroundColor="#F9679F";
+document.getElementById("name").style.backgroundColor="white";
+document.getElementById("name").style.fontSize="20pt";}
+
+</script>
+</head>
+
+<body>
+<h1 style="font-family:cursive" onclick="this.style.backgroundColor='white'; this.style.color='#A20E47'; this.style.transform='rotate(-5deg)';"> My Valentine Every Day of the Year </h1>
+<h5 id="name" style="font-size:35pt; background-color:#D6C2FE; color:#4D3183;">Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili! Cili!</h5>
+
+<h2> My valentine is Cili, my sweet 14 year old cat. As seen in the pictures, she loves affection and being close to people. She is deserving of all the love and cuddles, especially on Valentine's Day. </h2>
+
+<img src="cili1.jpeg" alt="Cili" height="400" width="auto">
+<img id="soup" src="cili2.jpeg" alt="Cili" height="400" width="auto">
+<img src="cili3.jpeg" alt="Cili" height="400" width="auto">
+
+<h2 onmouseover="getElementById('soup').src='soup.jpg';" onmouseout="getElementById('soup').src='cili2.jpeg';"> Hover over this message to see Cili's favorite treat which she gets daily! </h2>
+
+<h3 id="mood"> Below is a picture of Mano, Cili's brother whom she despises. Click on the picture of Mano to see how vicious he can be. </h3> 
+
+<img id="dog" onclick="this.src='mano2.jpg';" " src="mano1.jpg" alt="mano" height="400" width="auto">
+
+<h3> <span onclick="getElementById('dog').src='mano1.jpg'; getElementById('mood').innerHTML='Mano is shown!';">Normal Mano</span> or <span onclick="getElementById('dog').src='mano2.jpg'; getElementById('mood').innerHTML='Vicious Mano is shown!';">Sleepy Mano.</span> </h3>
+
+<h4> I wish Cili and all other cats and cat lovers a <div onclick="fish()">Happy Valentine's Day!</div></h4>
+
+</body>
+</html>
